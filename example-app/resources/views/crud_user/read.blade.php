@@ -1,7 +1,7 @@
 @extends('dashboard')
 
 @section('content')
-    <main class="login-form">
+    <!-- <main class="login-form">
         <div class="container">
             <div class="row justify-content-center">
                 <table>
@@ -22,5 +22,31 @@
                 </table>
             </div>
         </div>
-    </main>
+    </main> -->
+
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-5 fw-bolder">Màn hình chi tiết</h1>
+                    <table>
+                        <tr>
+                            <td><div class="small mb-1">Username:  </div></td>
+                            <td><h3 class="">{{$messi->name}}</h3></td>
+                        </tr>
+                        <tr>
+                            <td><div class="small mb-1">email:  </div></td>
+                            <td><h3 class="">{{$messi->email}}</h3></td>
+                        </tr>
+                    </table>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            <i class="bi-cart-fill me-1"></i>
+                            chỉnh sửa
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
